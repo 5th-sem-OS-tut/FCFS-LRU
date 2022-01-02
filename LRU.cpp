@@ -57,10 +57,9 @@ int main()
     }
     cout<<"\n\nNumber of Page Faults :"<<count;
     cout<<"\n\nNumber of Hits :"<<nopages - count;
-    cout<<"\n" << endl;
-    cout << "Hit Ratio: " << (nopages-count)*100/nopages << "%" << endl;
-    cout << "Miss Ratio: " << count/nopages*100 << "%" << endl;
-
+    cout<<"\n\nHit Ratio: "<<(nopages-count)*100/nopages << "%" << endl;
+    cout<<"\nMiss Ratio: "<<(count)*100/nopages << "%" << endl;
+    cout<<"\n";
     return 0;
  }
 /*
