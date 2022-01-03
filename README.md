@@ -14,6 +14,8 @@ easiest and simplest CPU scheduling algorithm. In this type of algorithm, proces
 which requests the CPU first get the CPU allocation first. This is managed with a
 FIFO queue.
 
+
+
 _What is LRU Page Replacement Algorithm?_
 
 This algorithm stands for "**Least Recently Used**" and this algorithm helps the
