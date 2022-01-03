@@ -4,6 +4,7 @@
 Course Instructor: **Dr. Jayasri B S**, Professor and Dean - EAB
 
 Submitted by: **Sathkeerthi Y Agnihothri** - 4NI19CS099
+                   
                    **Shyam Prasad M**    - 4NI19CS106
                    
 _What is FCFS scheduling algorithm?_
