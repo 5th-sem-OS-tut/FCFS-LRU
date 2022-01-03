@@ -23,7 +23,6 @@ bool compare(Schedule p1,Schedule p2)
 	return p1.artime < p2.artime;
 	/* To sort the processes according to the order of their Arrival Times */
 }
-
 bool revind(Schedule p1,Schedule p2)
 {
 	return p1.pro_id < p2.pro_id;
@@ -36,12 +35,9 @@ int main()
 	Schedule process[100];
 	//An array of Processes
 
-	int cpunon=0;
-
 	int n,i;
 	//n = number of processes, i= iteration variable
 
-	float percentage;
     cout << "------\nINPUT\n------" << flush;
 	cout << "\nEnter the number of processes: " << flush;
 	cin >> n;
@@ -58,7 +54,6 @@ int main()
 	/* Sort is a predefined function defined in algorithm.h header file,
 	it will sort the processes according to their arrival times */
 
-	cpunon=process[0].artime-0;
 
 	// initial values
 
@@ -79,11 +74,9 @@ int main()
 			process[i].ct=process[i].bt+process[i].artime;
 			process[i].tat=process[i].ct-process[i].artime;
 			process[i].wt=process[i].tat-process[i].bt;
-			cpunon+=process[i].artime-process[i-1].ct;
 		}
 	}
 
-	percentage=(float)((process[n-1].ct-cpunon)/process[n-1].ct)*100;
 
 	cout<< endl << "-------\nOUTPUT\n-------" << endl;
 	sort(process, process+n, revind);
